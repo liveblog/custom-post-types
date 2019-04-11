@@ -1,0 +1,33 @@
+<style>
+  .bigNumbers > div {
+    margin-bottom: 10px;
+  }
+  .editor-holder .bigNumbers > div {
+    margin-bottom: 20px;
+  }
+  .bigNumbers .bigNumber {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: initial;
+   }
+  .editor-holder .bigNumbers .bigNumber {
+    font-size: 13px;
+  }
+
+  @media screen and (max-width: 580px) {
+    .bigNumbers .bigNumber {
+      font-size: 32px;
+    }
+  }
+
+</style>
+<div class="bigNumbers">
+  <div>
+    <label for="bigNumbers.number" hide-render="">Number</label>
+    <input class="bigNumber" name="$bigNumbers.number"/>
+  </div>
+  <div>
+    <label for="bigNumbers.text" hide-render="">Text</label>
+    <input name="$bigNumbers.text" />
+  </div>
+</div>
