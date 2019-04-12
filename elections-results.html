@@ -453,91 +453,107 @@
      </div>
  </div>
 
- <style type="text/css">
- .results {
-     max-width: 700px;
- }
- span.results__headline {
-     display: block;
-     font-size: 1.06em;
-     font-weight: 700;
-     margin-bottom: .7em;
- }
- .results .results__list {
+<style type="text/css">
+    .results {
+        max-width: 700px;
+    }
+    span.results__headline {
+        display: block;
+        font-size: 1.06em;
+        font-weight: 700;
+        margin-bottom: .7em;
+    }
+    .results .results__list {
 
- }
- .results .result__item {
-     display: flex;
-     align-items: center;
-     margin: 20px 0px;
- }
- .editor-holder .results .result__item {
-     align-items: flex-start;
- }
- .results .result__itemImage {
-     flex: 0 1 auto;
-     max-width: 100px;
-     margin-right: 30px;
- }
- .results .result__itemImage img {
-     border-radius: 100%;
-     margin-right: 30px;
- }
- .results .result__candidateWrap {
-     flex: 1 1 100%;
-     margin: 10px 0px;
- }
- .results .result__candidateName {
-     font-weight: bold;
- }
- .results .result__candidateScore {
-     font-size: 19px;
-     font-weight: bold;
-     float: right;
- }
- .results .result__candidateBarWrap {
-     position: relative;
-     display: block;
-     margin: 5px 0px;
-     background: #ecf1f5;
-     width: 100%;
-     height: 20px;
- }
- .results .result__candidateBar {
-     height: 20px;
-     display: block;
-     background: #66cfa0;
- }
- .results .result__candidateParty {
-     color: #888888;
- }
- .editor-holder .results .result__itemImage {
-     align-self: flex-start;
-     white-space: nowrap;
- }
- .editor-holder .results .result__candidateWrap {
-     margin-top: 0px;
- }
- .editor-holder .results .result__candidateScore {
-     font-size: 13px;
-     float: none;
- }
- .results .upload-form .main .computer .dropzone .text {
-     font-size: 16px;
- }
- .results .upload-form .main .computer .dropzone .input-holder {
-     margin-top: 10px;
-     width: auto;
- }
- .results .upload-form .main .computer .dropzone .input-holder input {
-     line-height: 20px;
- }
- .results .upload-form .main .computer .dropzone .input-holder input:before, .blogedit .panel--editor .content .editor-holder .results .image-text {
-     white-space: pre-wrap;
- }
- @media screen and (max-width: 580px) {
-     .results .result__candidateScore {
-         float: none;
-     }
- }
- </style>
+    } 
+    .results .result__item {
+        display: flex;
+        align-items: center;
+        margin: 20px 0px;
+    }
+    .editor-holder .results .result__item {
+        align-items: flex-start;
+        padding: 10px;
+        margin: 10px 0px 20px 0px;
+        border: 1px solid #d4d4d4;
+    }
+    .results .result__itemImage {
+        flex: 0 1 auto;
+        max-width: 100px;
+        margin-right: 30px;
+    }
+    .results .result__itemImage img {
+        border-radius: 100%;
+        margin-right: 30px;
+    }
+    .results .result__candidateWrap {
+        flex: 1 1 100%;
+        margin: 10px 0px;
+    }
+    .results .result__candidateName {
+        font-weight: bold;
+    }
+    .results .result__candidateScore {
+        font-size: 19px;
+        font-weight: bold;
+        float: right;
+    }
+    .results .result__candidateBarWrap {
+        position: relative;
+        display: block;
+        margin: 5px 0px;
+        background: #ecf1f5;
+        width: 100%;
+        height: 20px;
+    }
+    .results .result__candidateBar {
+        height: 20px;
+        display: block;
+        background: #66cfa0;
+    }
+    .results .result__candidateParty {
+        color: #888888;
+    }
+    .editor-holder .results .result__itemImage {
+        align-self: flex-start;
+        white-space: nowrap;
+    }
+    .editor-holder .results .result__candidateWrap {
+        margin: 0px;
+    }
+    .editor-holder .results .result__candidateName .form-group {
+        margin-bottom: 10px;
+    }
+    .editor-holder .results .result__candidateScore {
+        font-size: 13px;
+        float: none;
+    }
+    .editor-holder .results .result__candidateBarWrap {
+        height: 5px;
+        margin: 10px 0px;
+    }
+    .editor-holder .results .result__candidateBar {
+        height: 5px;
+    }
+    .editor-holder .results .form-input {
+        margin-bottom: 10px;
+    }
+    .results .upload-form .main .computer .dropzone .text {
+        font-size: 16px;
+    }
+    .results .upload-form .main .computer .dropzone .input-holder {
+        margin-top: 10px;
+        width: auto;
+    }
+    .results .upload-form .main .computer .dropzone .input-holder input {
+        line-height: 16px;
+    }
+    .results .upload-form .main .computer .dropzone .input-holder input:before, .blogedit .panel--editor .content .editor-holder .results .image-text {
+        white-space: pre-wrap;
+    }
+    @media screen and (max-width: 580px) {
+        .results .result__candidateScore {
+            float: none;
+        }
+    }
+</style>
