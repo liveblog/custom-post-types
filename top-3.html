@@ -1,0 +1,225 @@
+<!-- Works with Liveblog 3.4 -->
+
+<div class="topThree">
+	<label for="topThree.headline" hide-render="">Headline</label>
+	<input class="topThree__headline" placeholder=" " name="$topThree.headline">
+	<label for="topThree.text" hide-render="">Additional text</label>
+	<input class="topThree__subheadline" placeholder=" " name="$topThree.text">
+
+	<div class="topThree__list">
+		<div class="topThree__item">
+			<div class="topThree__itemImage">
+				<label for="topThree.img1" hide-render="">Player image 1</label>
+				<input image="$topThree.img1">
+			</div>
+			<div class="topThree__wrap">
+				<div class="topThree__bigText">
+					<label for="topThree.bigtext1" hide-render="">Big text bold (E.G 90,00)</label>
+					<input class="topThree__bigText__bold" placeholder="Big text 1" name="$topThree.bigtext1">
+					<label for="topThree.bigtext2" hide-render="">Big text regular (E.G. Mill. €)</label>
+					<input class="topThree__bigText__regular" placeholder="Big text 2" name="$topThree.bigtext2">
+				</div>
+				<label for="topThree.name1" hide-render="">Player name 1</label>
+				<input class="topThree__name" placeholder="topThree" name="$topThree.name1">
+				<label for="topThree.smallertext1" hide-render="">Smaller text 1</label>
+				<input class="topThree__smallerText" placeholder="Smaller text" name="$topThree.smallertext1">
+			</div>
+		</div>
+		<div class="topThree__item">
+			<div class="topThree__itemImage">
+				<label for="topThree.img2" hide-render="">Player image 2</label>
+				<input image="$topThree.img2">
+			</div>
+			<div class="topThree__wrap">
+				<div class="topThree__bigText">
+					<label for="topThree.bigtext3" hide-render="">Big text bold (E.G 90,00)</label>
+					<input class="topThree__bigText__bold" placeholder="Big text 1" name="$topThree.bigtext3">
+					<label for="topThree.bigtext4" hide-render="">Big text regular (E.G. Mill. €)</label>
+					<input class="topThree__bigText__regular" placeholder="Big text 2" name="$topThree.bigtext4">
+				</div>
+				<label for="topThree.name2" hide-render="">Player name 2</label>
+				<input class="topThree__name" placeholder="topThree" name="$topThree.name2">
+				<label for="topThree.smallertext2" hide-render="">Smaller text 2</label>
+				<input class="topThree__smallerText" placeholder="Smaller text" name="$topThree.smallertext2">
+			</div>
+		</div>
+		<div class="topThree__item">
+			<div class="topThree__itemImage">
+				<label for="topThree.img3" hide-render="">Player image 3</label>
+				<input image="$topThree.img3">
+			</div>
+			<div class="topThree__wrap">
+				<div class="topThree__bigText">
+					<label for="topThree.bigtext5" hide-render="">Big text bold (E.G 90,00)</label>
+					<input class="topThree__bigText__bold" placeholder="Big text 1" name="$topThree.bigtext5">
+					<label for="topThree.bigtext6" hide-render="">Big text regular (E.G. Mill. €)</label>
+					<input class="topThree__bigText__regular" placeholder="Big text 2" name="$topThree.bigtext6">
+				</div>
+				<label for="topThree.name3" hide-render="">Player name 3</label>
+				<input class="topThree__name" placeholder="topThree" name="$topThree.name3">
+				<label for="topThree.smallertext3" hide-render="">Smaller text 3</label>
+				<input class="topThree__smallerText" placeholder="Smaller text" name="$topThree.smallertext3">
+			</div>
+		</div>
+	</div>
+</div>
+
+<style type="text/css">
+	.topThree {
+		max-width: 700px;
+	}
+
+	span.topThree__headline {
+		display: block;
+		font-size: 1.06em;
+		font-weight: 700;
+		margin-bottom: .7em;
+	}
+
+	.topThree .topThree__list {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.editor-holder .topThree .topThree__list {
+		flex-direction: column;
+	}
+
+	.topThree .topThree__item {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		flex: 0 1 32%;
+		text-align: center;
+		margin: 10px 0px;
+	}
+
+	.editor-holder .topThree .topThree__item {
+		flex-direction: row;
+		align-items: stretch;
+		justify-content: space-between;
+		text-align: left;
+		padding: 10px;
+		margin: 10px 0px 20px 0px;
+		border: 1px solid #d4d4d4;
+	}
+
+	.topThree .topThree__itemImage {
+		flex: 0 1 auto;
+	}
+
+	.topThree .topThree__itemImage img {
+		max-width: none;
+		height: 130px;
+		margin-bottom: -40px;
+	}
+
+	.editor-holder .topThree .topThree__itemImage img {
+		width: auto;
+		margin-bottom: 0px;
+	}
+
+	.topThree .topThree__wrap {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		flex: 1 1 100%;
+		margin: 10px 0px;
+	}
+
+	.editor-holder .topThree .topThree__wrap {
+		align-items: stretch;
+		margin: 0px;
+	}
+
+	.topThree .topThree__name {
+		font-size: 17px;
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+
+	.editor-holder .topThree .topThree__name {
+		font-size: inherit;
+		margin-bottom: 0px;
+	}
+
+	.topThree .topThree__bigText {
+		margin-bottom: 10px;
+		background: #66cfa0;
+		color: #fff;
+		width: 90px;
+		height: 90px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		border-radius: 100%;
+	}
+
+	.topThree .topThree__bigText__bold {
+		font-size: 24px;
+		font-weight: bold;
+	}
+
+	.topThree .topThree__smallerText {
+		color: #888888;
+	}
+
+	.editor-holder .topThree .topThree__itemImage {
+		flex: 0 0 30%;
+		align-self: flex-start;
+		white-space: nowrap;
+		margin-right: 20px;
+	}
+
+	.editor-holder .topThree .topThree__topThreeWrap {
+		margin: 0px;
+	}
+
+	.editor-holder .topThree .topThree__name .form-group {
+		margin-bottom: 10px;
+	}
+
+	.editor-holder .topThree .topThree__bigText {
+		font-size: inherit;
+		margin: 0px;
+		background: transparent;
+		width: auto;
+		height: auto;
+		display: block;
+		text-align: left;
+		border-radius: 0px;
+	}
+
+	.editor-holder .topThree .topThree__bigText__bold {
+		font-size: 13px;
+	}
+
+	.editor-holder .topThree .form-input {
+		margin-bottom: 10px;
+	}
+
+	.topThree .upload-form .main .computer .dropzone .text {
+		font-size: 16px;
+	}
+
+	.topThree .upload-form .main .computer .dropzone .input-holder {
+		margin: 10px;
+		width: auto;
+	}
+
+	.topThree .upload-form .main .computer .dropzone .input-holder input {
+		line-height: 16px;
+	}
+
+	.topThree .upload-form .main .computer .dropzone .input-holder input:before,
+	.blogedit .panel--editor .content .editor-holder .topThree .image-text {
+		white-space: pre-wrap;
+	}
+
+	@media screen and (max-width: 580px) {
+		.topThree .topThree__list {
+			flex-direction: column;
+		}
+	}
+</style>

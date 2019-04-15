@@ -1,0 +1,201 @@
+<!-- Works with Liveblog 3.4 -->
+
+<div class="bigNumbers">
+		<label class="bigNumbers__itemImageLabel" for="bigNumbers.img" hide-render="">Background image</label>
+		<input class="bigNumbers__itemImage" image="$bigNumbers.img">
+	<div class="bigNumbers__list">
+		<label for="bigNumbers.headline" hide-render="">Headline</label>
+		<input class="bigNumbers__headline" placeholder=" " name="$bigNumbers.headline">
+		<label for="bigNumbers.text" hide-render="">Additional text</label>
+		<input class="bigNumbers__subheadline" placeholder=" " name="$bigNumbers.text">
+		<div class="bigNumbers__items">
+			<div class="bigNumbers__item">
+				<div class="bigNumbers__bigText">
+					<label for="bigNumbers.bignumber1" hide-render="">Big number (E.G 48)</label>
+					<input class="bigNumbers__bigText__bold" placeholder="Big number 1" name="$bigNumbers.bignumber1">
+					<label for="bigNumbers.smalltext1" hide-render="">Small text (E.G. goals)</label>
+					<input class="bigNumbers__bigText__regular" placeholder="Small text 1" name="$bigNumbers.smalltext1">
+				</div>
+			</div>
+			<div class="bigNumbers__item">
+				<div class="bigNumbers__bigText">
+					<label for="bigNumbers.bignumber2" hide-render="">Big number (E.G 144)</label>
+					<input class="bigNumbers__bigText__bold" placeholder="Big number 1" name="$bigNumbers.bignumber2">
+					<label for="bigNumbers.smalltext2" hide-render="">Small text (E.G. games)</label>
+					<input class="bigNumbers__bigText__regular" placeholder="Small text 2" name="$bigNumbers.smalltext2">
+				</div>
+			</div>
+			<div class="bigNumbers__item">
+				<div class="bigNumbers__bigText">
+					<label for="bigNumbers.bignumber3" hide-render="">Big number (E.G 23)</label>
+					<input class="bigNumbers__bigText__bold" placeholder="Big number 1" name="$bigNumbers.bignumber3">
+					<label for="bigNumbers.smalltext3" hide-render="">Small text (E.G. assists)</label>
+					<input class="bigNumbers__bigText__regular" placeholder="Small text 3" name="$bigNumbers.smalltext3">
+				</div>
+			</div>
+		</div>
+		<label for="bigNumbers.smallertext" hide-render="">Smaller text</label>
+		<input class="bigNumbers__smallerText" placeholder="Smaller text" name="$bigNumbers.smallertext">
+	</div>
+</div>
+
+<style type="text/css">
+	.bigNumbers {
+		position: relative;
+		max-width: 700px;
+	}
+
+	.editor-holder .bigNumbers {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.editor-holder .bigNumbers .bigNumbers__itemImageLabel {
+		order: 4;
+	}
+
+	.editor-holder .bigNumbers .bigNumbers__itemImage {
+		position: relative;
+		order: 5;
+	}
+
+	.bigNumbers img + .bigNumbers__list {
+		position: relative;
+		color: #fff;
+		padding: 30px;
+		z-index: 2;
+	}
+
+	.bigNumbers img + .bigNumbers__list:after {
+		position: absolute;
+		display: block;
+		content: " ";
+		background: rgba(18, 31, 49, 0.8);
+		z-index: -1;
+		top: 0px;
+		left: 0px;
+		bottom: 0px;
+		right: 0px;
+	}
+
+	.bigNumbers img + .bigNumbers__list .bigNumbers__smallerText {
+		color: #fff;
+	}
+
+	.bigNumbers img {
+		position: absolute;
+		top: 0px;
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+
+	.editor-holder .bigNumbers img {
+		position: relative;
+		z-index: 0;
+	}
+
+	span.bigNumbers__headline {
+		display: block;
+		font-size: 1.4em;
+		font-weight: 700;
+		margin-bottom: .7em;
+	}
+
+	.bigNumbers .bigNumbers__list {
+
+	}
+
+	.bigNumbers .bigNumbers__items {
+		display: flex;
+		margin: 20px 0px;
+	}
+
+	.editor-holder .bigNumbers .bigNumbers__items {
+		margin: 0px;
+	}
+
+	.bigNumbers .bigNumbers__item {
+		flex: 1 1 auto;
+		margin: 10px 0px;
+	}
+
+	.editor-holder .bigNumbers .bigNumbers__item {
+		padding: 10px;
+		margin: 10px 0px 20px 0px;
+		border: 1px solid #d4d4d4;
+	}
+
+	.bigNumbers .bigNumbers__name {
+		font-size: 17px;
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+
+	.editor-holder .bigNumbers .bigNumbers__name {
+		font-size: inherit;
+		margin-bottom: 0px;
+	}
+
+	.bigNumbers .bigNumbers__bigText {
+		margin-bottom: 10px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.bigNumbers .bigNumbers__bigText__bold {
+		font-size: 48px;
+		font-weight: bold;
+		line-height: initial;
+	}
+
+	.bigNumbers .bigNumbers__smallerText {
+		font-size: .9em;
+		color: #888888;
+	}
+
+	.editor-holder .bigNumbers .bigNumbers__bigNumbersWrap {
+		margin: 0px;
+	}
+
+	.editor-holder .bigNumbers .bigNumbers__name .form-group {
+		margin-bottom: 10px;
+	}
+
+	.editor-holder .bigNumbers .bigNumbers__bigText {
+		display: block;
+	}
+
+	.editor-holder .bigNumbers .bigNumbers__bigText__bold {
+		font-size: 13px;
+	}
+
+	.editor-holder .bigNumbers .form-input {
+		margin-bottom: 10px;
+	}
+
+	.bigNumbers .upload-form .main .computer .dropzone .text {
+		font-size: 16px;
+	}
+
+	.bigNumbers .upload-form .main .computer .dropzone .input-holder {
+		margin: 10px;
+		width: auto;
+	}
+
+	.bigNumbers .upload-form .main .computer .dropzone .input-holder input {
+		line-height: 16px;
+	}
+
+	.bigNumbers .upload-form .main .computer .dropzone .input-holder input:before,
+	.blogedit .panel--editor .content .editor-holder .bigNumbers .image-text {
+		white-space: pre-wrap;
+	}
+
+	@media screen and (max-width: 580px) {
+		.bigNumbers .bigNumbers__list {
+			flex-direction: column;
+		}
+	}
+</style>

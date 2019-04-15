@@ -1,0 +1,121 @@
+<!-- Works with Liveblog 3.4 -->
+
+<div class="tennisResult">
+	<div class="tennisResult__list">
+		<label for="tennisResult.headline" hide-render="">Headline</label>
+		<input class="tennisResult__headline" placeholder=" " name="$tennisResult.headline">
+		<label for="tennisResult.text" hide-render="">Additional text</label>
+		<input class="tennisResult__subheadline" placeholder=" " name="$tennisResult.text">
+		<div class="tennisResult__items">
+			<div class="tennisResult__item tennisResult__item--players">
+				<span hide-render="">Players</span>
+				<span class="tennisResult__space"></span>
+				<input class="tennisResult__result tennisResult__result--player" placeholder="Player name 1" name="$tennisResult.player1">
+				<input class="tennisResult__result" placeholder="Player name 2" name="$tennisResult.player2">
+				<span class="tennisResult__space"></span>
+			</div>
+			<div class="tennisResult__item">
+				<span>1st set</span>
+				<input class="tennisResult__result" placeholder=" " name="$tennisResult.result1">
+				<input class="tennisResult__result" placeholder=" " name="$tennisResult.result2">
+				<input class="tennisResult__result tennisResult__result--current" placeholder=" " name="$tennisResult.result3">
+			</div>
+			<div class="tennisResult__item">
+				<span>2st set</span>
+				<input class="tennisResult__result" placeholder=" " name="$tennisResult.result4">
+				<input class="tennisResult__result" placeholder=" " name="$tennisResult.result5">
+				<input class="tennisResult__result tennisResult__result--current" placeholder=" " name="$tennisResult.result6">
+			</div>
+			<div class="tennisResult__item">
+				<span>3rd set</span>
+				<input class="tennisResult__result" placeholder=" " name="$tennisResult.result7">
+				<input class="tennisResult__result" placeholder=" " name="$tennisResult.result8">
+				<input class="tennisResult__result tennisResult__result--current" placeholder=" " name="$tennisResult.result9">
+			</div>
+			<div class="tennisResult__item">
+				<span>4th set</span>
+				<input class="tennisResult__result" placeholder=" " name="$tennisResult.result10">
+				<input class="tennisResult__result" placeholder=" " name="$tennisResult.result11">
+				<input class="tennisResult__result tennisResult__result--current" placeholder=" " name="$tennisResult.result12">
+			</div>
+			<div class="tennisResult__item">
+				<span>5th set</span>
+				<input class="tennisResult__result" placeholder=" " name="$tennisResult.result13">
+				<input class="tennisResult__result" placeholder=" " name="$tennisResult.result14">
+				<input class="tennisResult__result tennisResult__result--current" placeholder=" " name="$tennisResult.result15">
+			</div>
+		</div>
+		<label for="tennisResult.smallertext" hide-render="">Smaller text</label>
+		<input class="tennisResult__smallerText" placeholder="Smaller text" name="$tennisResult.smallertext">
+	</div>
+</div>
+
+<style type="text/css">
+	.tennisResult {
+		max-width: 700px;
+	}
+
+	span.tennisResult__headline {
+		display: block;
+		font-size: 1.06em;
+		font-weight: 700;
+		margin-bottom: .7em;
+	}
+
+	.tennisResult .tennisResult__items {
+		display: flex;
+	}
+
+	.tennisResult .tennisResult__item {
+		display: flex;
+		flex-direction: column;
+		flex: 1 1 auto;
+		text-align: center;
+	}
+
+	.tennisResult .tennisResult__item--players {
+		text-align: left;
+	}
+
+	.tennisResult .tennisResult__item--players span {
+		padding-left: 0px !important;
+		border-color: transparent !important;
+	}
+
+	.tennisResult .tennisResult__item:last-child {
+		margin-right: 0px;
+	}
+
+	.tennisResult .tennisResult__item span {
+		padding: 5px 10px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.tennisResult .tennisResult__item:first-child span:first-child {
+		border-bottom: none;
+	}
+
+	.tennisResult .tennisResult__item span:first-child {
+		color: #888888;
+		border-bottom: 1px solid #d6d6d6;
+	}
+
+	.editor-holder .tennisResult .tennisResult__item span:first-child {
+		border-bottom: none;
+	}
+
+	.tennisResult .tennisResult__item span:nth-child(3) {
+		border-bottom: 1px solid #d6d6d6;
+	}
+
+	.tennisResult .tennisResult__space {
+		flex: 1 0 auto;
+		width: 100%;
+	}
+
+	.editor-holder .tennisResult .tennisResult__result--player {
+		margin-top: -37px;
+	}
+
+</style>

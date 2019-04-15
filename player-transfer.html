@@ -1,0 +1,160 @@
+<!-- Works with Liveblog 3.4 -->
+
+<div class="player">
+	<label for="player.headline" hide-render="">Headline</label>
+	<input class="player__headline" placeholder=" " name="$player.headline">
+	<label for="player.text" hide-render="">Additional text</label>
+	<input class="player__subheadline" placeholder=" " name="$player.text">
+
+	<div class="player__list">
+		<div class="player__item">
+			<div class="player__itemImage">
+				<label for="player.img" hide-render="">Player image</label>
+				<input image="$player.img">
+			</div>
+			<div class="player__itemImage player__itemImage--club">
+				<label for="player.club" hide-render="">Club image</label>
+				<input image="$player.club">
+			</div>
+			<div class="player__wrap">
+				<label for="player.name" hide-render="">Player name</label>
+				<input class="player__name" placeholder="player" name="$player.name">
+				<label for="player.bigtext" hide-render="">Big text</label>
+				<input class="player__bigText" placeholder="Big text" name="$player.bigtext">
+				<label for="player.smallertext" hide-render="">Smaller text</label>
+				<input class="player__smallerText" placeholder="Smaller text" name="$player.smallertext">
+			</div>
+		</div>
+	</div>
+</div>
+
+<style type="text/css">
+	.player {
+		max-width: 700px;
+	}
+
+	span.player__headline {
+		display: block;
+		font-size: 1.06em;
+		font-weight: 700;
+		margin-bottom: .7em;
+	}
+
+	.player .player__list {}
+
+	.player .player__item {
+		display: flex;
+		align-items: center;
+		margin: 20px 0px;
+	}
+
+	.editor-holder .player .player__item {
+		align-items: flex-start;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 10px;
+		margin: 10px 0px 20px 0px;
+		border: 1px solid #d4d4d4;
+	}
+
+	.player .player__itemImage {
+		flex: 0 1 auto;
+		max-width: 100px;
+		margin-right: 30px;
+	}
+
+	.player .player__itemImage img {
+		max-width: 100px;
+	}
+
+	.player .player__itemImage--club {
+		margin-right: 0px;
+		order: 3;
+	}
+
+	.player .player__itemImage--club img {
+		max-width: 60px;
+	}
+
+	.player .player__wrap {
+		display: flex;
+		flex-direction: column;
+		flex: 1 1 100%;
+		margin: 10px 0px;
+	}
+
+	.player .player__name {
+		font-size: 19px;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+
+	.editor-holder .player .player__name {
+		font-size: inherit;
+	}
+
+	.player .player__bigText {
+		font-size: 24px;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+
+	.player .player__smallerText {
+		color: #888888;
+	}
+
+	.editor-holder .player .player__itemImage {
+		flex: 0 0 45%;
+		align-self: flex-start;
+		white-space: nowrap;
+		max-width: none;
+		margin: 0;
+	}
+
+	.editor-holder .player .player__itemImage--club {
+		order: initial;
+	}
+
+	.editor-holder .player .player__playerWrap {
+		margin: 0px;
+	}
+
+	.editor-holder .player .player__name .form-group {
+		margin-bottom: 10px;
+	}
+
+	.editor-holder .player .player__bigText {
+		font-size: inherit;
+	}
+
+	.editor-holder .player .form-input {
+		margin-bottom: 10px;
+	}
+
+	.player .upload-form .main .computer .dropzone .text {
+		font-size: 16px;
+	}
+
+	.player .upload-form .main .computer .dropzone .input-holder {
+		margin: 10px;
+		width: auto;
+	}
+
+	.player .upload-form .main .computer .dropzone .input-holder input {
+		line-height: 16px;
+	}
+
+	.player .upload-form .main .computer .dropzone .input-holder input:before,
+	.blogedit .panel--editor .content .editor-holder .player .image-text {
+		white-space: pre-wrap;
+	}
+
+	@media screen and (max-width: 580px) {
+		.player .player__item {
+			flex-wrap: wrap;
+		}
+		.player .player__itemImage--club {
+			order: initial;
+		}
+	}
+</style>
